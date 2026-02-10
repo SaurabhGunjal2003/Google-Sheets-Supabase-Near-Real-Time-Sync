@@ -81,6 +81,11 @@ Keeps a log of all sync operations for tracking errors.
 
 - Reduces errors with validation and conflict resolution.
 
+- Keeps a full history of all operations for auditing.
+
+- Works continuously without manual intervention.
+
+
 
 
 +----------------+          +---------------------+          +------------------+
@@ -98,7 +103,3 @@ Keeps a log of all sync operations for tracking errors.
         |                             +----------------+
         |                                     |
         +-------------------------------------+
-
-- Keeps a full history of all operations for auditing.
-
-- Works continuously without manual intervention.
