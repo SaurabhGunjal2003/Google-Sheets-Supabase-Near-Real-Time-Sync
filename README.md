@@ -5,10 +5,10 @@ A robust, automated bi-directional synchronization system that seamlessly connec
 
 This system ensures:
 
--Data consistency across both platforms
+- Data consistency across both platforms
 
--Near real-time synchronization
+- Near real-time synchronization
 
--Strong data integrity
+- Strong data integrity
 
--Comprehensive logging and error handling
+- Comprehensive logging and error handling
