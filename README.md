@@ -88,18 +88,3 @@ Keeps a log of all sync operations for tracking errors.
 
 
 
-+----------------+          +---------------------+          +------------------+
-|  Google Sheets | <------> | Google Apps Script  | <------> | Supabase DB      |
-| (Employee Data)|          | (Validation & API) |          | (employee_contacts|
-+----------------+          +---------------------+          | + sync_logs)     |
-        ^                          ^                             ^
-        |                          |                             |
-        |                          +-----------------------------+
-        |                                     ^
-        |                                     |
-        |                             +----------------+
-        |                             | pg_cron / Edge |
-        |                             | Functions      |
-        |                             +----------------+
-        |                                     |
-        +-------------------------------------+
