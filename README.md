@@ -81,6 +81,24 @@ Keeps a log of all sync operations for tracking errors.
 
 - Reduces errors with validation and conflict resolution.
 
+
+
++----------------+          +---------------------+          +------------------+
+|  Google Sheets | <------> | Google Apps Script  | <------> | Supabase DB      |
+| (Employee Data)|          | (Validation & API) |          | (employee_contacts|
++----------------+          +---------------------+          | + sync_logs)     |
+        ^                          ^                             ^
+        |                          |                             |
+        |                          +-----------------------------+
+        |                                     ^
+        |                                     |
+        |                             +----------------+
+        |                             | pg_cron / Edge |
+        |                             | Functions      |
+        |                             +----------------+
+        |                                     |
+        +-------------------------------------+
+
 - Keeps a full history of all operations for auditing.
 
 - Works continuously without manual intervention.
